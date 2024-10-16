@@ -1,9 +1,5 @@
 use std::collections::HashMap;
 
-mod tests;
-mod singleton;
-mod learn_traits;
-
 fn main() {
     println!("Hello, world!");
     let mut v: Vec<i32> = Vec::new();
