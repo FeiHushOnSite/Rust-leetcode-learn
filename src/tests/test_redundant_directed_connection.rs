@@ -38,11 +38,11 @@ fn redundant_redirected_connection(edges: Vec<Vec<i32>>) -> Vec<i32> {
             }
         }
     }
-    return if let Some((a, b, c)) = triangle {
+    if let Some((a, b, c)) = triangle {
         if let Some(_) = cycle { vec![a, c] } else { vec![b, c] }
     } else {
         if let Some((r, t)) = cycle { vec![r, t]} else { panic!() }
-    };
+    }
 }
 // pub fn redundant_redirected_connection(edges: Vec<Vec<i32>>) -> Vec<i32> {
 //     let n = edges.len();

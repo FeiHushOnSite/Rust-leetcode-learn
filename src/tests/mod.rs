@@ -21,3 +21,4 @@ mod test_time_required_to_buy;
 mod test_seat_manager;
 mod test_stable_mountains;
 mod test_number_of_pairs;
+mod test_losing_player;
